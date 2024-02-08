@@ -1,0 +1,98 @@
+/* -- RESET -- */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+menu {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* -- LAYOUT -- */
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row-reverse{
+  flex-direction: row-reverse;
+}
+
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center{
+  align-items: center;
+}
+.center-text{
+  text-align: center;
+}
+.margin-x-center{
+  margin: 0 auto;
+}
+
+.col-100 {
+  width: 100%;
+}
+.col-50 {
+  width: 80%;
+}
+.col-33 {
+  width: calc(100%/3);
+}
+.col-66 {
+  width: calc((100%/3)*2);
+}
+
+/* -- GENERAL STYLE -- */
+body{
+  font-family:Arial, Helvetica, sans-serif;
+}
+/* header */
+header{
+  background-color: red;
+}
+
+
+
+/* -- DEBUG -- */
+.debug .container {
+  border: 1px dotted rgba(250, 0, 0, 0.3);
+  padding: 10px;
+}
+
+.debug .row {
+  border: 1px dotted rgba(0, 0, 0, 0.3);
+  padding: 10px;
+}
+
+.debug [class^="col-"] {
+  background-color: #daa52062;
+  padding: 10px;
+  min-height: 10px;
+}
+
