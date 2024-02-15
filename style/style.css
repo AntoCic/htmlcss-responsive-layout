@@ -1,4 +1,6 @@
-/* -- RESET -- */
+/*************************************************
+    RESET
+ *************************************************/
 * {
   padding: 0;
   margin: 0;
@@ -19,22 +21,29 @@ img {
   max-width: 100%;
 }
 
-/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-/* -- LAYOUT -- */
+/************************************************
+    UTILITIES
+ ************************************************/
+/* LAYOUT */
 .container {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 1024px;
+  padding: 12px;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
 }
-.flex-wrap {
+.flex{
   display: flex;
+}
+.flex-wrap {
   flex-wrap: wrap;
 }
-
+.flex-column {
+  flex-direction: column;
+}
 .row-reverse{
   flex-direction: row-reverse;
 }
@@ -50,10 +59,7 @@ img {
   align-items: center;
 }
 
-.center-text{
-  text-align: center;
-}
-.marginX-center{
+.marginX-center {
   margin: 0 auto;
 }
 
@@ -70,20 +76,62 @@ img {
   width: calc((100%/3)*2);
 }
 
-/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-/* -- GENERAL STYLE -- */
+/* TEXT */
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+
+/*************************************************
+    GENERAL STYLES
+ *************************************************/
 body{
   font-family:Arial, Helvetica, sans-serif;
 }
 
-/* header */
+/* HEADER */
 
-/* main */
+/* MAIN */
 
-/* footer */
+/* FOOTER */
 
-/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-/* -- DEBUG -- */
+/*************************************************
+    MEDIA RESPONSIVE
+ *************************************************/
+ /* form phone to desktop */
+ /* breakpoints Small*/
+
+ /* @media (min-width: 576px) {
+	
+} */
+ /* breakpoints Medium*/
+ /* @media (min-width: 768px) {
+	
+ } */
+ /* breakpoints Large*/
+ /* @media (min-width: 992px) {
+	
+ } */
+
+  /* form desktop to phone */
+ /* breakpoints Small*/
+ /* @media (max-width: 992px) {
+	
+ } */
+  /* breakpoints Medium*/
+  /* @media (max-width: 576px) {
+   
+  } */
+  /* breakpoints Large*/
+  /* @media (max-width: 576px) {
+   
+  } */
+  
+ /*************************************************
+    DEBUG
+ *************************************************/
 header,
 main,
 footer{
