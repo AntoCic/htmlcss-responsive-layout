@@ -101,33 +101,19 @@ body{
     MEDIA RESPONSIVE
  *************************************************/
  /* form phone to desktop */
- /* breakpoints Small*/
 
- /* @media (min-width: 576px) {
+ /* breakpoints Small*/
+ @media (min-width: 576px) {
 	
-} */
+}
  /* breakpoints Medium*/
- /* @media (min-width: 768px) {
+ @media (min-width: 768px) {
 	
- } */
+ }
  /* breakpoints Large*/
- /* @media (min-width: 992px) {
+ @media (min-width: 992px) {
 	
- } */
-
-  /* form desktop to phone */
- /* breakpoints Small*/
- /* @media (max-width: 992px) {
-	
- } */
-  /* breakpoints Medium*/
-  /* @media (max-width: 576px) {
-   
-  } */
-  /* breakpoints Large*/
-  /* @media (max-width: 576px) {
-   
-  } */
+ }
   
  /*************************************************
     DEBUG
