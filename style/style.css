@@ -64,8 +64,8 @@ img {
   align-items: center;
 }
 
-.marginX-center {
-  margin: 0 auto;
+.gap-30{
+gap: 30px;
 }
 
 .col-100 {
@@ -81,12 +81,23 @@ img {
   width: calc((100%/3)*2);
 }
 
+.marginX-center {
+  margin: 0 auto;
+}
+
 /* TEXT */
 .text-center {
   text-align: center;
 }
 .text-right {
   text-align: right;
+}
+/* BUTTONS */
+.bt-style1{
+  border: 0;
+  border-radius: 500px;
+  padding: 10px;
+  background-color: white;
 }
 
 /*************************************************
@@ -97,6 +108,19 @@ body{
 }
 
 /* HEADER */
+header{
+  background-color: #0084FD;
+}
+.header img{
+  display: block;
+}
+.header li{
+  color: white;
+}
+.header button{
+  padding: 10px 15px;
+}
+
 
 /* MAIN */
 
