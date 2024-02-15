@@ -84,6 +84,9 @@ gap: 30px;
 .marginX-center {
   margin: 0 auto;
 }
+.hidden{
+  display: none;
+  }
 
 /* TEXT */
 .text-center {
@@ -141,15 +144,20 @@ header{
  }
  /* breakpoints Large*/
  @media (min-width: 992px) {
-	
+  header li:first-child {
+    display: none;
+  }
+	header li:not(li:first-child){
+    display: initial;
+  }
  }
   
  /*************************************************
     DEBUG
  *************************************************/
-header,
-main,
-footer{
+ .debug header,
+ .debug main,
+ .debug footer{
   border-top: 2px solid rgb(0, 250, 0);
 }
 
