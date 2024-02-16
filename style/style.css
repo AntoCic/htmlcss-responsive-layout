@@ -1,7 +1,7 @@
 /*************************************************
     RESET
  *************************************************/
-* {
+ * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -18,7 +18,7 @@ a {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
 }
 
 /************************************************
@@ -28,19 +28,19 @@ img {
 .container {
   margin: 0 auto;
   max-width: 1204px; /* 1140px */
-  padding: 32px;
+  padding: 12px 32px;
 }
 .container-sm {
   margin: 0 auto;
-  max-width: 944px;  /* 880px */
-  padding: 32px;
+  max-width: 944px; /* 880px */
+  padding: 12px 32px;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
 }
-.flex{
+.flex {
   display: flex;
 }
 .flex-wrap {
@@ -49,7 +49,7 @@ img {
 .flex-column {
   flex-direction: column;
 }
-.row-reverse{
+.row-reverse {
   flex-direction: row-reverse;
 }
 
@@ -60,12 +60,12 @@ img {
   justify-content: space-between;
 }
 
-.align-center{
+.align-center {
   align-items: center;
 }
 
-.gap-30{
-gap: 30px;
+.gap-30 {
+  gap: 30px;
 }
 
 .col-12 {
@@ -75,25 +75,26 @@ gap: 30px;
   width: 50%;
 }
 .col-4 {
-  width: calc(100%/3);
+  width: calc(100% / 3);
 }
 .col-8 {
-  width: calc((100%/3)*2);
+  width: calc((100% / 3) * 2);
 }
 
 .marginX-center {
   margin: 0 auto;
 }
-.hidden{
+.hidden {
   display: none;
-  }
+}
 
 /* TEXT */
-h2{
+h2 {
   font-size: 25px;
 }
-p{
-  line-height: 25px;
+p {
+  line-height: 1.8em;
+  font-size: 14px;
 }
 .text-center {
   text-align: center;
@@ -101,8 +102,9 @@ p{
 .text-right {
   text-align: right;
 }
-/* BUTTONS */
-.bt-style1{
+/* COMPONENTS */
+/* buttons */
+.bt-style1 {
   border: 0;
   border-radius: 500px;
   padding: 10px;
@@ -112,162 +114,219 @@ p{
 /*************************************************
     GENERAL STYLES
  *************************************************/
-body{
-  font-family:Arial, Helvetica, sans-serif;
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
-[class^="col"] {
+[class^="col-"]{
   padding: 12px;
   width: 100%;
 }
 
 /* HEADER */
-header{
-  background-color: #0084FD;
+header {
+  background-color: #0084fd;
 }
-.header img{
+.header img {
   display: block;
 }
-.header li{
+.header li {
   color: white;
 }
-.header button{
+.header button {
   padding: 10px 15px;
 }
 
 /* MAIN */
 /* hero */
 .hero .row {
-  margin: 0 -12px;  
+  margin: 0 -12px;
 }
 
-.card,.card-sm{
+.card,
+.card-sm {
   display: flex;
   flex-direction: column;
-  background-color: #B5DDFF;
+  background-color: #b5ddff;
   border-radius: 20px;
   height: 100%;
-} 
-.card-sm{
+}
+.card-sm {
   align-items: center;
+  text-align: center;
   gap: 32px;
-  padding: 24px;  
+  padding: 24px;
 }
 
-.card-body{
-  padding: 24px;  
+.card .card-body {
+  padding: 24px;
 }
-.card-body p{
-  margin: 24px 0;  
+.card .card-body p {
+  margin: 24px 0;
 }
-.card-body .bt-style1{
-  padding: 15px 50px;  
+.card .card-body .bt-style1 {
+  padding: 15px 50px;
   color: white;
-  background-color: #0084FD;
+  background-color: #0084fd;
   font-size: 20px;
 }
-.card-img{
-  padding-left:24px; 
-  padding-right:24px; 
+.card .card-img {
+  padding-left: 24px;
+  padding-right: 24px;
   padding-top: 24px;
 }
-.card-img img{ 
+.card .card-img img {
   display: block;
 }
-.card-sm>i{
-  font-size: 90px;  
+.card-sm > i {
+  font-size: 90px;
 }
-.card-sm i,.hero h2{
-  color: #0084FD;
-  }
-  /* planning */
-.planning{
-  background-color: #9593E6;
-  
+.card-sm i,
+.hero h2 {
+  color: #0084fd;
 }
-.box-trasparent{
+/* planning */
+.planning {
+  background-color: #9593e6;
+}
+.box-trasparent {
   color: white;
 }
-.box-white{
+.box-white {
   background-color: white;
   padding: 20px;
   border-radius: 30px;
   text-align: center;
 }
-.bt-style1{
-  background-color: #9593E6;
+.planning .bt-style1 {
+  background-color: #9593e6;
   color: white;
   width: 50px;
   aspect-ratio: 1/1;
   font-size: 20px;
 }
-h1{
+.box-trasparent h2 {
   margin: 50px 0;
+  font-size: 30px;
 }
-h2{
+h2 {
   margin: 20px 0;
 }
-p{
+.planning p {
   margin-bottom: 30px;
 }
+/* testimonials */
+.testimonials{
+  text-align: center;
+}
+.testimonials p{
+  font-size: 1.3em;
+}
+.testimonials .col-12>p{
+  margin: 30px 0;
+}
+.testimonials .col-12>h1{
+  font-size: 1em;
+  font-weight: 100;
+}
+.testimonials .col-12>h2 {
+  font-size: 30px;
+}
+.card-testimonials{
+  background-color: #9593e6;
+  border-radius: 50px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.card-testimonials .card-img{
+  padding: 0 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.card-testimonials .card-img img{
+  max-width: 250px;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center;
+}
+.name-testimonials{
+  margin-top: 10px;
 
+}
 
 /* FOOTER */
 
 /*************************************************
     MEDIA RESPONSIVE
  *************************************************/
- /* form phone to desktop */
+/* form phone to desktop */
 
- /* breakpoints Medium*/
- @media (min-width: 768px) {
-
-  .col-4 {
-    width: calc(100%/3);
+/* breakpoints Medium*/
+@media (min-width: 768px) {
+  .col-md-4 {
+    width: calc(4 * 100% / 12);
   }
-  .col-8 {
-    width: calc((100%/3)*2);
+  .col-md-8 {
+    width: calc(8 * 100% / 12);
   }
-  .col-6 {
-    width: 50%;
-  }
-  .card-img{
+  /* planning */  
+  .card .card-img {
     max-width: 50%;
-    }
-
-    .box-white{
-      padding: 50px;
-    
-    }
-    .box-white img{
-      padding: 50px;
-    }
-	
- }
- /* breakpoints Large*/
- @media (min-width: 992px) {
+  }
+  .box-white {
+    padding: 50px;
+  }
+  .box-white img {
+    padding: 0 50px;
+  }
+  /* testimonials */
+  .testimonials{
+    text-align: justify;
+  }
+  .card-testimonials{
+    flex-direction: row;
+    align-items: center;
+  }
+  .card-testimonials .card-img img{
+    width: 250px;
+  }
+  
+}
+/* breakpoints Large*/
+@media (min-width: 992px) {
   header li:first-child {
     display: none;
   }
-	header li:not(li:first-child){
+  header li:not(li:first-child) {
     display: initial;
   }
-  .card{
+  .card {
     flex-direction: row;
-  } 
-  .card-img{
+  }
+  .card .card-img {
     align-self: flex-end;
   }
-  .card-body{
+  .card .card-body {
     max-width: 50%;
-    }
- }
-  
- /*************************************************
+  }
+  /* planning */
+  .col-lg-6 {
+    width: calc(6 * 100% / 12);
+  }
+  .self-flex-end {
+    align-self: flex-end;
+  }  
+  /* testimonials */
+}
+
+/*************************************************
     DEBUG
  *************************************************/
- .debug header,
- .debug main,
- .debug footer{
+.debug header,
+.debug main,
+.debug footer {
   border-top: 2px solid rgb(0, 250, 0);
 }
 
@@ -286,4 +345,3 @@ p{
   padding: 10px;
   min-height: 10px;
 }
-
