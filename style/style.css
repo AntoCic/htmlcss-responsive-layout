@@ -238,6 +238,7 @@ h2 {
   display: flex;
   flex-direction: column;
   color: white;
+  margin-top: 30px;
 }
 .card-testimonials .card-img{
   padding: 0 30px;
@@ -255,6 +256,38 @@ h2 {
   margin-top: 10px;
 
 }
+/* benefits */
+.benefits{
+  background-color: #9593e6;
+}
+.benefits h1{
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+.benefits-card{
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+}
+.benefits-card .card-index,
+.benefits-card h2{
+  color: #9593e6;
+}
+.benefits-card .card-index{
+  font-size: 50px;
+  font-weight: bolder;
+}
+.benefits-card h2{
+  font-size: 1.8em;
+}
+.benefits-card .bt-style1{
+  background-color: #9593e6;
+  padding: 15px 50px;
+  color: white;
+  font-size: 20px;
+  margin-top: 30px;
+}
 
 /* FOOTER */
 
@@ -267,6 +300,9 @@ h2 {
 @media (min-width: 768px) {
   .col-md-4 {
     width: calc(4 * 100% / 12);
+  }
+  .col-md-6 {
+    width: calc(6 * 100% / 12);
   }
   .col-md-8 {
     width: calc(8 * 100% / 12);
@@ -292,10 +328,18 @@ h2 {
   .card-testimonials .card-img img{
     width: 250px;
   }
-  
+    /* benefits */
+    
 }
 /* breakpoints Large*/
 @media (min-width: 992px) {
+  .col-lg-6 {
+    width: calc(6 * 100% / 12);
+  }
+  .col-lg-4 {
+    width: calc(4 * 100% / 12);
+  }
+  
   header li:first-child {
     display: none;
   }
@@ -312,13 +356,12 @@ h2 {
     max-width: 50%;
   }
   /* planning */
-  .col-lg-6 {
-    width: calc(6 * 100% / 12);
-  }
+  
   .self-flex-end {
     align-self: flex-end;
   }  
   /* testimonials */
+  /* benefits */
 }
 
 /*************************************************
